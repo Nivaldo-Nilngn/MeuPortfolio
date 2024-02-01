@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+}
+
+#sidebar {
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #21262d;
+    color: #fff;
+    padding-top: 20px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    align-items: center;
+    flex-direction: column;
+}
+
+#content {
+    margin-left: 250px;
+    padding: 15px;
+    transition: margin-left 0.5s;
+}
+
+#sidebar.active {
+    left: -250px;
+}
+
+#content.active {
+    margin-left: 0;
+}
+
+#sidebar img {
+    width: 190px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#sidebar h3 {
+    margin-bottom: 30px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidebar ul li a:hover {
+    background-color: #555;
+    color: cadetblue;
+}
+
+header,
+section,
+footer {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #5bc0de;
+}
+
+footer {
+    text-align: center;
+    color: #777;
+}
+
+/* Cards */
+.card {
+    margin-bottom: 20px;
+    background-color: #f8f9fa; /* Light Gray */
+    border: 1px solid #dee2e6; /* Light Gray */
+}
+
+.card-header {
+    background-color: #5bc0de; /* Light Blue */
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #5bc0de; /* Light Blue */
+    color: #fff;
+}
