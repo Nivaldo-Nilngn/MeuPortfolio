@@ -1,110 +1,483 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Nivaldo G Neto - Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivaldo G Neto | Portfolio</title>
+  <meta name="description"
+    content="Portfólio da desenvolvedora front-end Nivaldo G Neto para compartilhar projetos e habilidades desenvolvidas.">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-
-    <!-- Sidebar -->
-    <nav id="sidebar">
-        <div class="sidebar-header">
-            <img src="assets/img/foto.jpg" alt="Sua Foto">
-            <h3>Nivaldo G Neto</h3>
-        </div>
-
-        <ul class="list-unstyled components">
-            <li><a href="#projeto1">Calculadora</a></li>
-            <li><a href="#projeto2">E-commerce</a></li>
-            <li><a href="#projeto3">Clone Netflix</a></li>
-            <li><a href="#projeto4">Jogo Online</a></li>
-            <li><a href="#projeto5">Blog Pessoal</a></li>
-        </ul>
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="menu menu--principal">
+        <li class="menu__item">
+          <a class="menu__link active" href="#home">
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#projetos">
+            <span class="menu__text">Projetos</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#sobre">
+            <span class="menu__text">Sobre</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contato">
+            <span class="menu__text">Contato</span>
+          </a>
+        </li>
+      </ul>
     </nav>
-
-    <!-- Conteúdo da página -->
-    <div id="content">
-        <header>
-            <h1>Meu Portfólio</h1>
-        </header>
-
-        <!-- Seção Projetos -->
-        <section id="projeto1" class="card">
-            <h5 class="card-header bg-info text-white">Calculadora</h5>
-            <div class="card-body">
-                <p class="card-text">Calculadora online versátil e intuitiva para suas necessidades de cálculo, Realize
-                    operações básicas e avançadas com facilidade, incluindo adição, subtração, multiplicação, divisão,
-                    raiz quadrada, potenciação e porcentagem, Ideal para estudantes, profissionais e entusiastas,
-                    simplificando suas tarefas matemáticas diárias.</p>
-                <a href="#" class="btn btn-info text-white">Acesse a Calculadora</a>
-            </div>
-        </section>
-
-        <!-- Seção Projetos -->
-        <section id="projeto2" class="card">
-            <h5 class="card-header bg-info text-white">E-commerce</h5>
-            <div class="card-body">
-                <p class="card-text">Criei um site de comércio eletrônico oferecendo uma variedade de produtos de alta
-                    qualidade, Explore uma experiência de compra fácil e segura, com opções de pagamento convenientes,
-                    Encontre produtos exclusivos e aproveite ofertas especiais. Faça suas compras online agora!</p>
-                <a href="#" class="btn btn-info text-white">Visite o E-commerce</a>
-            </div>
-        </section>
-
-        <!-- Seção Projetos -->
-        <section id="projeto3" class="card">
-            <h5 class="card-header bg-info text-white">Clone Netflix</h5>
-            <div class="card-body">
-                <p class="card-text">Desenvolvi um site com funcionalidades semelhantes ao popular serviço de
-                    streaming Netflix, Navegue por uma vasta coleção de filmes e séries, personalize sua lista de
-                    reprodução e desfrute de uma experiência de entretenimento única, Assista aos seus programas
-                    favoritos quando quiser. Entre no mundo do entretenimento agora!</p>
-                <a href="#" class="btn btn-info text-white">Explore o Clone Netflix</a>
-            </div>
-        </section>
-
-        <!-- Seção Projetos -->
-        <section id="projeto4" class="card">
-            <h5 class="card-header bg-info text-white">Jogo Online</h5>
-            <div class="card-body">
-                <p class="card-text">Criei um emocionante jogo online com gráficos envolventes e desafios empolgantes,
-                    Explore mundos virtuais, enfrente inimigos e alcance novos níveis de habilidade, Jogue sozinho ou
-                    desafie seus amigos para uma competição amigável. Aventure-se no jogo agora!</p>
-                <a href="#" class="btn btn-info text-white">Jogue o Jogo Online</a>
-            </div>
-        </section>
-
-        <!-- Seção Projetos -->
-        <section id="projeto5" class="card">
-            <h5 class="card-header bg-info text-white">Blog Pessoal</h5>
-            <div class="card-body">
-                <p class="card-text">Criei um blog pessoal para compartilhar pensamentos, ideias e experiências,
-                    Explore uma variedade de tópicos, desde tecnologia até estilo de vida, e participe de conversas
-                    estimulantes, Siga o blog para receber as últimas atualizações e inspirações. Junte-se à comunidade!
-                </p>
-                <a href="#" class="btn btn-info text-white">Leia o Blog Pessoal</a>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <p>&copy; <span id="currentYear"></span> Nivaldo G Neto. Todos os direitos reservados.</p>
-        </footer>
+    <div class="header__brand">
+      <a href="#home">
+        <img class="brand__logo" src="assets/images/logo-ea.png" alt="Logo EA">
+      </a>
     </div>
+    <div class="header__toggle">
+      <i id="toggleTheme" class="bi bi-sun"></i>
+    </div>
+  </header>
+  <nav class="nav--mobile">
+    <ul class="menu menu--mobile">
+      <li class="menu__item">
+        <a class="menu__link active" href="#home">
+          <i class="menu__icon bi bi-house-door"></i>
+          <span class="menu__text">Home</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#projetos">
+          <i class="menu__icon bi bi-window-stack"></i>
+          <span class="menu__text">Projetos</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#sobre">
+          <i class="menu__icon bi bi-person"></i>
+          <span class="menu__text">Sobre</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#contato">
+          <i class="menu__icon bi bi-envelope"></i>
+          <span class="menu__text">Contato</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+  <main id="home">
+    <div class="main__content1">
+      <h1><b>Soluções Criativas &</b> Desenvolvimento full Stack</h1>
+      <p>Nivaldo G Neto, Recife-PE, Desenvolvedor e Instrutor de Informática.</p>
+      <ul class="menu menu--social">
+        <li>
+          <a class="menu__link" href="https://github.com/Nivaldo-Nilngn" target="_blank">
+            <i class="menu__icon bi bi-github"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.linkedin.com/in/Nivaldo-Nilngn/" target="_blank">
+            <i class="menu__icon bi bi-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.instagram.com/nivaldogneto/" target="_blank">
+            <i class="menu__icon bi bi-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      
+      <a href="#projetos">
+        <button class="btn btn--primary">
+          <span>Ver Projetos</span>
+          <i class="bi bi-arrow-down-right"></i>
+        </button>
+      </a>
+    </div>
+  </main>
+
+  <section class="technologies">
+    <h2>Conhecimento nas principais tecnologias do mercado</h2>
+    <ul class="technologies__list">
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/HTML.svg" alt="Logo HTML">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/CSS.svg" alt="Logo CSS">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/JavaScript.svg" alt="Logo JavaScript">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/TypeScript.svg" alt="Logo TypeScript">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/React.svg" alt="Logo React">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/Firebase.svg" alt="Logo Firebase">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="assets/images/technologies/CSharp.svg" alt="Logo C#">
+      </li>
+    </ul>
+  </section>
+
+
+  <section id="projetos" class="projects">
+    <h2>Projetos</h2>
+    <div class="projects__container">
+      <div class="projects__card">
+        <img class="card__cover" src="assets/images/projects/multiverso.png" alt="multiverso home araranha">
+        <div class="card__body">
+          <h3 class="card__title">Homem-Aranha Multiverso!</h3>
+          <p class="card__description">Bem-vindo ao projeto Homem-Aranha Multiverso! Este projeto é uma homenagem a
+            todas as versões do Homem-Aranha, permitindo que você navegue por diferentes filmes e universos do
+            personagem icônico.</p>
+          <ul class="card__list">
+            <li class="card__item">Navegação entre diferentes versões do Homem-Aranha;</li>
+            <li class="card__item">Assistir trailers diretamente na modal;</li>
+            <li class="card__item">Galeria de imagens dos filmes.</li>
+            <li class="card__item">Assistir trailers diretamente na modal;</li>
+            <li class="card__item">Design responsivo e moderno.</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/HTML.svg" alt="Logo HTML">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/CSS.svg" alt="Logo CSS">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/JavaScript.svg" alt="Logo JavaScript">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://nivaldo-nilngn.github.io/spider-man-multiverses/" target="_blank" class="btn btn--primary">
+              <span>Prévia</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+            <a href="https://github.com/Nivaldo-Nilngn/spider-man-multiverses" target="_blank" class="btn">
+              <span>Repositório</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="projects__card card--reverse">
+        <img class="card__cover" src="assets/images/projects/mundoInvertido.png" alt="Capa Archstil">
+        <div class="card__body">
+          <h3 class="card__title">Mundo Invertido </h3>
+          <p class="card__description">Bem-vindo, aventureiro! Você está prestes a embarcar em uma jornada emocionante
+            pelo Mundo Invertido, onde os perigos espreitam a cada esquina e os desafios são apenas o começo da sua
+            aventura. Prepare-se para entrar no universo de Stranger Things e Dungeons & Dragons!</p>
+          <ul class="card__list">
+            <li class="card__item">Explore o Mundo Invertido: Descubra os segredos e as criaturas que habitam este reino
+              sombrio;</li>
+            <li class="card__item">Assista ao Trailer: Veja o que os heróis de Stranger Things enfrentam nesta nova
+              temporada;</li>
+            <li class="card__item">Galeria Épica: Navegue por imagens icônicas da série.</li>
+            <li class="card__item">Inscreva-se no Clube de D&D: Junte-se aos heróis de Hawkins e participe da próxima
+              aventura!.</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/HTML.svg" alt="Logo HTML">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/CSS.svg" alt="Logo CSS">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/JavaScript.svg" alt="Logo JavaScript">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://nivaldo-nilngn.github.io/mundo-invertido/" target="_blank" class="btn btn--primary">
+              <span>Prévia</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+            <a href="https://github.com/Nivaldo-Nilngn/mundo-invertido" target="_blank" class="btn">
+              <span>Repositório</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__card">
+        <img class="card__cover" src="assets/images/projects/virtualPiano.png" alt="Capa Games Store">
+        <div class="card__body">
+          <h3 class="card__title">Piano Simulator</h3>
+          <p class="card__description">Este é um simulador de piano virtual desenvolvido com HTML, CSS e JavaScript. O
+            projeto permite tocar notas musicais clicando nas teclas do piano ou usando o teclado físico do seu
+            computador. Inclui controles de volume e a opção de exibir ou ocultar as teclas.</p>
+          <ul class="card__list">
+            <li class="card__item">Tocar notas musicais com o mouse ou teclado físico.;</li>
+            <li class="card__item">Controle de volume integrado;</li>
+            <li class="card__item">Opção de exibir ou ocultar as teclas virtuais.</li>
+            <li class="card__item">Opção de exibir ou ocultar as teclas virtuais.</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/HTML.svg" alt="Logo HTML">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/CSS.svg" alt="Logo CSS">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/JavaScript.svg" alt="Logo JavaScript">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://nivaldo-nilngn.github.io/virtual-piano/" target="_blank" class="btn btn--primary">
+              <span>Prévia</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+            <a href="https://github.com/Nivaldo-Nilngn/virtual-piano" target="_blank" class="btn">
+              <span>Repositório</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/Nivaldo-Nilngn">
+        <button class="btn btn--primary">
+          <span>Ver Todos os Projetos</span>
+          <i class="bi bi-arrow-up-right"></i>
+        </button>
+      </a>
+    </div>
+  </section>
+
+  <section id="sobre" class="about">
+    <div class="about__content1">
+      <img class="about__photo" src="assets/images/avatar.jpg" alt="">
+      <div class="about__description">
+        <h2>Sobre mim</h2>
+        <p>Sou DEV com especialização em Banco de Dados e uma paixão por explorar as mais diversas linguagens de
+          programação. Ao longo da minha carreira, tenho atuado como Coordenador e Professor de Informática, com foco em
+          desenvolver cursos e conteúdos nas áreas de Programação, Web Design, Design Gráfico, além de Manutenção de
+          Computadores.
+        </p>
+        <div class="about__icons">
+          <i class="bi bi-translate"></i>
+          <span>Inglês: Básico | Espanhol: Básico</span>
+        </div>
+        <div class="description__buttons">
+          <a href="https://www.linkedin.com/in/Nivaldo-Nilngn/" target="_blank">
+            <button class="btn btn--primary">
+              <span>Conecte-se Comigo</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>
+          </a>
+          <a href="assets/NivaldoGermano.pdf" target="_blank">
+            <button class="btn">
+              <span>Currículo</span>
+            </button>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+    <div class="about__content2">
+      <div class="col1">
+        <div class="row1">
+          <h3>Formação</h3>
+          <h4>Analise e Desenvolvimento de sistemas</h4>
+          <span>Fev 2023 - Atualmente</span>
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>Descomplica faculdade digital</span>
+          </div>
+        </div>
+        <div class="row2">
+          <h3>Experiências</h3>
+          <h4>Professor</h4>
+          <span>Incentiva Cursos. Set 2024 - Atualmente</span>
+          <span>Produção de conteúdos educacionais para cursos profissionalizantes em diversas áreas, incluindo Informática, Designer, Programação, Administração, Saúde e Linguagens.</span>
+          <ul class="about__list">
+            <li class="about__item">Elaboração de ementas para diferentes áreas;</li>
+            <li class="about__item">Ministração de aulas teóricas e práticas;</li>
+            <li class="about__item">Produção de materiais complementares para cada especialidade.</li>
+          </ul>
+        </div>        
+      </div>
+      <div class="col2">
+        <h3>Cursos</h3>
+        <div id="accordion">
+          <div class="accordion__item">
+            <button class="accordion__header start">
+              <span>Versionamento de Código com Git e GitHub</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Digital Innovation One. Fev 2024.
+              </p>
+              <p>
+                O que é versionamento de código, Git e GitHub. Como instalar e configurar o Git em diferentes sistemas
+                operacionais e como autenticar via Token e SSH. Como manusear repositórios, indo desde a criação e
+                clonagem
+                até o gerenciamento de branches, passando por todas as etapas de salvar, desfazer e sincronizar
+                alterações
+                com o repositório remoto.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Contribuindo em um Projeto Open Source no GitHub</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Digital Innovation One. Fev 2023.
+              </p>
+              <p>
+                Lab prático sobre colaboração em projetos de código aberto.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>Organizando seus Estudos com os Roadmaps DIO e o Notion</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body end">
+              <p>
+                Digital Innovation One. Fev 2023.
+              </p>
+              <p>
+                Otimização dos estudos com os Roadmaps DIO, construindo um caderno de estudos com a ferramenta Notion.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header start">
+              <span>Firebase - Banco de Dados</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Danki Code. Concluído em 2022.
+              </p>
+              <p>
+                Estudo aprofundado do Firebase como banco de dados em tempo real, incluindo autenticação de usuários e integração com aplicativos web.
+              </p>
+            </div>
+          </div>
+          
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Programador - C#</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Prepara Cursos. Concluído em 2022.
+              </p>
+              <p>
+                Curso de C# com foco em fundamentos de programação orientada a objetos e desenvolvimento de aplicações desktop.
+              </p>
+            </div>
+          </div>
+          
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Inglês para Programador</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Danki Code. Concluído em 2022.
+              </p>
+              <p>
+                Curso voltado para a prática do inglês técnico aplicado à programação, abordando termos e expressões comuns no desenvolvimento de software.
+              </p>
+            </div>
+          </div>
+          
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Web Designer - JavaScript, HTML, CSS</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Prepara Cursos. Concluído em 2021.
+              </p>
+              <p>
+                Desenvolvimento de sites e aplicações web com HTML, CSS e JavaScript, incluindo conceitos de design responsivo e interatividade.
+              </p>
+            </div>
+          </div>
+          
+          <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>Designer Gráfico - Photoshop e CorelDraw</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body end">
+              <p>
+                Prepara Cursos. Concluído em 2021.
+              </p>
+              <p>
+                Curso sobre ferramentas e técnicas de design gráfico com ênfase no uso de Photoshop e CorelDraw para criação visual e manipulação de imagens.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="contato" class="contact">
+    <h2>Contate-me</h2>
+    <p>Estou disponível para serviços e novas conexões. Contate-me via
+      e-mail e conecte-se comigo através das minhas redes sociais.
+    </p>
+    <ul class="menu menu--social">
+      <li>
+        <a class="menu__link" href="https://github.com/Nivaldo-Nilngn" target="_blank">
+          <i class="menu__icon bi bi-github"></i>
+          <span>GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a class="menu__link" href="https://www.linkedin.com/in/nivaldo-g-neto-859549234/" target="_blank">
+          <i class="menu__icon bi bi-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a class="menu__link" href="https://www.instagram.com/nivaldogneto/" target="_blank">
+          <i class="menu__icon bi bi-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </li>
+    </ul>
+    <a href="mailto:Nivaldo.Nilngn@gmail.com">
+      <button class="btn btn--primary">
+        <span class="email">Nivaldo.Nilngn@gmail.com</span>
+      </button>
+    </a>
+  </section>
+
+  <footer>
+    <p>
+      © 2024
+      <a href="https://github.com/Nivaldo-Nilngn" target="_blank">Nivaldo G Neto</a>.
+    </p>
+  </footer>
+  <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
