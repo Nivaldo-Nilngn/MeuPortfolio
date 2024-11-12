@@ -2,7 +2,7 @@
 
 ## Desenvolvedor Full Stack
 
-Sou **Cientista da Computação** com especialização em **Banco de Dados** e uma paixão por explorar as mais diversas linguagens de programação. Ao longo da minha carreira, tenho atuado como **Coordenador** e **Professor de Informática**, com foco em desenvolver cursos e conteúdos nas áreas de **Programação**, **Web Design**, **Design Gráfico**, além de **Manutenção de Computadores**.
+Sou **DEV** com especialização em **Backend** e uma paixão por explorar as mais diversas linguagens de programação. Ao longo da minha carreira, tenho atuado como **Coordenador** e **Professor de Informática**, com foco em desenvolver cursos e conteúdos nas áreas de **Programação**, **Web Design**, **Design Gráfico**, além de **Manutenção de Computadores**.
 
 ---
 ### 🚀 **Minhas Especialidades**
@@ -17,9 +17,12 @@ Sou **Cientista da Computação** com especialização em **Banco de Dados** e u
 
 ### 💼 **Experiência Profissional**
 
-#### 💻 **Prepara Cursos - Unidade São Lourenço** *(03/2020 - atual)*
+#### 💻 **Incentiva Cursos - Unidade paulista (09/2022 - atual)*
 - 📌 **Coordenador e Professor de Informática**
 - ✏️ Desenvolvimento de cursos nas áreas de **Programação**, **Web Design**, **Design Gráfico** e **Manutenção de Computadores**
+- 
+#### 🎨 **Prepara Cursos - Unidade São Lourenço** *(2022 - 2020)*
+- 📌 **Professor de Informática**, **Design Gráfico** e **Web Design**
 
 #### 🎨 **InforLine Cursos** *(2012 - 2014)*
 - 📌 **Professor de Informática**, **Design Gráfico** e **Web Design**
